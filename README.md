@@ -1,4 +1,4 @@
-# gatsby-starter-default
+# daisyriemdumali.github.io
 The default Gatsby starter
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
