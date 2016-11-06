@@ -1,0 +1,7 @@
+exports.modifyWebpackConfig = function(config, env) {
+	{ 
+		test: /vendor\/.+\.(jsx|js)$/,
+  		loader: 'imports?jQuery=jquery,$=jquery,this=>window'
+	}  
+  return config
+}

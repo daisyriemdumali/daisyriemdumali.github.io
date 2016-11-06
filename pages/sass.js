@@ -1,5 +1,5 @@
 import React from 'react'
-import './example.scss'
+//import './example.scss'
 import Helmet from 'react-helmet'
 import { config } from 'config'
 

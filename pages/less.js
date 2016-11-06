@@ -1,5 +1,5 @@
 import React from 'react'
-import './example.less'
+//import './example.less'
 import Helmet from 'react-helmet'
 import { config } from 'config'
 

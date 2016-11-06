@@ -2,8 +2,6 @@ import React from 'react'
 import Helmet from "react-helmet"
 
 import { prefixLink } from 'gatsby-helpers'
-import { TypographyStyle, GoogleFont } from 'react-typography'
-import typography from './utils/typography'
 
 const BUILD_TIME = new Date().getTime()
 
@@ -18,7 +16,7 @@ module.exports = React.createClass({
 
     let css
     if (process.env.NODE_ENV === 'production') {
-      css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
+      css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/style.css') }} />
     }
 
     return (
@@ -32,9 +30,8 @@ module.exports = React.createClass({
           />
           {head.title.toComponent()}
           {head.meta.toComponent()}
-          <TypographyStyle typography={typography} />
-          <GoogleFont typography={typography} />
-          {css}
+          <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet" />
+          <link rel="stylesheet" href="css/fontello.css" />
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
